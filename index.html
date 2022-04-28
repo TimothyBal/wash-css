@@ -1,1 +1,24 @@
-<h1 class="used-css"></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Wash</title>
+</head>
+<body>
+    <form action="/wash" method="post">
+        <textarea name="htmlArea" id="htmlArea" cols="30" rows="10"></textarea>
+        <textarea name="cssArea" id="cssArea" cols="30" rows="10"></textarea>
+        <button class="used-css" id="submit-btn" type="submit">submit</button>
+    </form>
+    <script>
+        const submitBtn = document.getElementById("submit-btn");
+        submitBtn.addEventListener("click", async (e) => {
+            e.preventDefault();
+            //HERE
+        })
+    // TODO : prevent default submission & render purged results on page (Not json response) 
+    </script>
+</body>
+</html>
